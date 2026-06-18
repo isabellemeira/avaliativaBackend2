@@ -31,8 +31,11 @@ function Cadastro() {
     } catch (error) {
       console.error('Erro ao cadastrar:', error);
 
-      if (error.response && error.response.data) {
-        alert(`Erro: ${error.response.data}`);
+
+      if (axios.isAxiosError(error) && error.response) {
+
+        const mensagemErro = error.response.data?.mensagem || error.response.data;
+        alert(`Erro: ${mensagemErro}`);
       } else {
         alert('Erro ao conectar com o servidor. Verifique se o backend está rodando.');
       }
