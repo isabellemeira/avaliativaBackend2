@@ -1,0 +1,265 @@
+.pessoas-pagina {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    padding: 40px;
+}
+
+.pessoas-container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.pessoas-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.pessoas-topo h1 {
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.pessoas-topo p {
+    color: #cbd5e1;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.pessoas-topo-botoes {
+    display: flex;
+    gap: 12px;
+}
+
+.pessoas-botao-voltar,
+.pessoas-botao-novo {
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pessoas-botao-voltar {
+    background-color: #64748b;
+}
+
+.pessoas-botao-voltar:hover {
+    background-color: #475569;
+}
+
+.pessoas-botao-novo {
+    background-color: #2563eb;
+}
+
+.pessoas-botao-novo:hover {
+    background-color: #1d4ed8;
+}
+
+.pessoas-form-card,
+.pessoas-lista-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.pessoas-form-centralizado {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.pessoas-form-card h2,
+.pessoas-lista-card h2 {
+    color: #0f172a;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.pessoas-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.pessoas-formulario input,
+.pessoas-formulario select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    color: #0f172a;
+    background-color: white;
+}
+
+.pessoas-formulario input:focus,
+.pessoas-formulario select:focus {
+    border-color: #2563eb;
+}
+
+.pessoas-botoes {
+    display: flex;
+    gap: 10px;
+}
+
+.pessoas-botao-salvar {
+    flex: 1;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pessoas-botao-salvar:hover {
+    background-color: #1d4ed8;
+}
+
+.pessoas-botao-cancelar {
+    flex: 1;
+    padding: 13px;
+    border: 1px solid #64748b;
+    border-radius: 10px;
+    background-color: white;
+    color: #475569;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pessoas-botao-cancelar:hover {
+    background-color: #f1f5f9;
+}
+
+.pessoas-lista-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pessoas-lista-topo p {
+    color: #64748b;
+    font-size: 15px;
+}
+
+.pessoas-tabela-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.pessoas-tabela {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pessoas-tabela thead {
+    background-color: #f1f5f9;
+}
+
+.pessoas-tabela th {
+    color: #334155;
+    text-align: left;
+    padding: 14px;
+    font-size: 14px;
+}
+
+.pessoas-tabela td {
+    color: #475569;
+    padding: 14px;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 14px;
+}
+
+.pessoas-tabela tr:hover {
+    background-color: #f8fafc;
+}
+
+.pessoas-status {
+    background-color: #dcfce7;
+    color: #166534;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.pessoas-acoes {
+    display: flex;
+    gap: 8px;
+}
+
+.pessoas-botao-editar {
+    background-color: #f59e0b;
+    color: white;
+    border: none;
+    padding: 8px 11px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pessoas-botao-editar:hover {
+    background-color: #d97706;
+}
+
+.pessoas-botao-excluir {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 8px 11px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pessoas-botao-excluir:hover {
+    background-color: #dc2626;
+}
+
+@media (max-width: 700px) {
+    .pessoas-pagina {
+        padding: 20px;
+    }
+
+    .pessoas-topo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .pessoas-topo h1 {
+        font-size: 28px;
+    }
+
+    .pessoas-topo-botoes {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .pessoas-botao-voltar,
+    .pessoas-botao-novo {
+        width: 100%;
+    }
+
+    .pessoas-botoes {
+        flex-direction: column;
+    }
+
+    .pessoas-botao-salvar,
+    .pessoas-botao-cancelar {
+        width: 100%;
+    }
+}
